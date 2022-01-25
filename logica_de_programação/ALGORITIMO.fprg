@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cleci"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-24 11:23:26 "/>
+        <attribute name="created" value="Y2xlY2k7Q0xFQ0lPLVItQy1TSUxWOzIwMjItMDEtMjQ7IjA4OjI2OjQxICI7MjczNA=="/>
+        <attribute name="edited" value="Y2xlY2k7Q0xFQ0lPLVItQy1TSUxWOzIwMjItMDEtMjQ7IjExOjIzOjI2ICI7NDsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media &gt;=7">
+                <then>
+                    <output expression="&quot;parabens voce &#233; top&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;infelizmente voce nao possui nota&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
